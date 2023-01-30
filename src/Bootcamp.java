@@ -11,6 +11,15 @@ public class Bootcamp {
     private final LocalDate dataFinal = dataInicial.plusDays(365);
     private Set<Dev> devsInscritos = new HashSet<>();//unica
     private Set<Conteudo> conteudos = new LinkedHashSet<>();//ordenada e unica
+
+    
+    
+    public Bootcamp(String nome, String descricao, Set<Dev> devsInscritos, Set<Conteudo> conteudos) {
+        this.nome = nome;
+        this.descricao = descricao;
+        this.devsInscritos = devsInscritos;
+        this.conteudos = conteudos;
+    }
     
     public String getNome() {
         return nome;

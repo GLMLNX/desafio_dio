@@ -19,4 +19,9 @@ public abstract class Conteudo{
         this.descricao = descricao;
     }
 
+    public Conteudo(String titulo, String descricao) {
+        this.titulo = titulo;
+        this.descricao = descricao;
+    }
+    
 }
